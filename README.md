@@ -23,8 +23,20 @@ PHP 8, MySQL 8, без фреймворков. Клиентская часть �
 ## Установка
 
 1. Скопируйте проект в папку веб-сервера (XAMPP: `htdocs`, OpenServer: `domains`).
-2. Создайте базу данных `kait_library` и импортируйте `database/schema.sql`.
-3. Откройте `http://localhost/kait-library/public/`.
+2. Скопируйте `.env.example` в `.env` и укажите свои `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASS`. Файл `.env` не загружается в Git.
+3. Создайте базу `kait_library`. Импортируйте сначала `database/schema.sql`, затем `database/seed.sql`, чтобы появились учебные книги и пользователи.
+4. В PHP должны быть включены `pdo_mysql` и `mbstring`.
+5. Откройте `http://localhost/kait-library/public/`.
+
+Для проверки без Apache можно выполнить из корня проекта:
+
+```text
+php -S 127.0.0.1:8083 -t public
+```
+
+Тогда адрес сайта и `APP_URL` в `.env` — `http://localhost:8083`. Если в Windows драйвер PDO для MySQL установлен, но не включён, используйте `php -d extension=pdo_mysql -S 127.0.0.1:8083 -t public`.
+
+Проверено с PHP 8.4.6 и MySQL 8.4. Можно зарегистрировать своего учебного читателя. Данные готовых учебных пользователей указаны в `database/seed.sql`.
 
 ## Структура
 
