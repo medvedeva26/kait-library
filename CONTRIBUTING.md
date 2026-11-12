@@ -24,6 +24,8 @@ php ../PP03/tools/php/phpcs.phar --report=summary
 php ../PP03/tools/php/phpcbf.phar
 ```
 
+Если PHP сообщает «could not find driver», проверьте список модулей командой php -m и включите pdo_mysql в своём php.ini. Если терминал редактора не видит Git или PHP, добавьте папки программ в свой PATH и откройте терминал заново.
+
 Перед коммитом проверьте git diff и повторите phpcs. Если проверка проходит, у команды код завершения 0.
 
 ## Git
