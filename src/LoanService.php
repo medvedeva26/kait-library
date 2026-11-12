@@ -112,9 +112,9 @@ class LoanService
             [$copy['book_id']]
         );
         $othersBefore = 0;
-        foreach ($reservations as $r) {
-            if ($r['user_id'] == $reader['id']) {
-                $ownReservation = $r;
+        foreach ($reservations as $reservation) {
+            if ($reservation['user_id'] == $reader['id']) {
+                $ownReservation = $reservation;
                 break;
             }
             $othersBefore++;
