@@ -1,0 +1,4 @@
+{
+  "name": "ПП03",
+  "extensions": "[{\"identifier\": {\"id\": \"bmewburn.vscode-intelephense-client\", \"uuid\": \"ffda6552-0ad5-431b-a4fa-0905a7e4f3f0\"}, \"displayName\": \"PHP Intelephense\", \"applicationScoped\": false}, {\"identifier\": {\"id\": \"editorconfig.editorconfig\", \"uuid\": \"f60a60a6-95ba-42d4-b41c-3d24c1b89588\"}, \"displayName\": \"EditorConfig\", \"applicationScoped\": false}]"
+}

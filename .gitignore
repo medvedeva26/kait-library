@@ -3,3 +3,4 @@ public/uploads/*
 !public/uploads/.gitkeep
 .idea/
 *.log
+nbproject/private/
