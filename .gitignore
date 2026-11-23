@@ -4,3 +4,7 @@ public/uploads/*
 .idea/
 *.log
 nbproject/private/
+
+practice/m07/*.mkv
+practice/m07/*.webm
+practice/m07/draft*
